@@ -12,7 +12,7 @@ for(i=0; i< timesArr.length; i++) {
 
     var newP = $("<p>").attr("class", "col-1 hour").text(timesArr[i])
 
-    var newTextArea = $("<textarea>").attr("placeholder", "Enter your activity").attr("id", timesArr[i]);
+    var newTextArea = $("<textarea>").attr("placeholder", "").attr("id", timesArr[i]);
     if(i+9 < parseInt(currentHour)) {
         newTextArea.attr("class", "col-10 past")
     }else if (i+9 == parseInt(currentHour)) {
